@@ -11,7 +11,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { CactusFill } from "@phosphor-icons/react";
+import { BiHappy } from "react-icons/bi";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -94,13 +94,7 @@ const Navbar = () => {
             display="flex"
             alignItems="center"
           >
-            <Box
-              as={CactusFill}
-              mr={2}
-              color="cactus.500"
-              fontSize="1.5rem"
-              weight="fill"
-            />
+            <Box as={BiHappy} mr={2} color="cactus.500" fontSize="1.7rem" />
             Cory's Portfolio
           </Text>
 

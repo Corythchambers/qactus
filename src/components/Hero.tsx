@@ -9,7 +9,8 @@ import {
   Flex,
   Icon,
 } from "@chakra-ui/react";
-import { GiCactus, GiDesert } from "react-icons/gi";
+import { GiDesert } from "react-icons/gi";
+import { BiHappy } from "react-icons/bi";
 
 const Hero = () => {
   const bgColor = useColorModeValue("sand.50", "gray.900");
@@ -32,13 +33,13 @@ const Hero = () => {
       </Box>
 
       <Box position="absolute" top="15%" left="5%" opacity={0.1} zIndex={0}>
-        <Icon as={GiCactus} w={20} h={20} color="cactus.500" />
+        <Icon as={GiDesert} w={20} h={20} color="cactus.500" />
       </Box>
 
       <Container maxW="container.lg" position="relative" zIndex={1}>
         <VStack spacing={6} align="flex-start">
           <Flex align="center">
-            <Icon as={GiCactus} mr={3} w={8} h={8} color={accentColor} />
+            <Icon as={BiHappy} mr={3} w={8} h={8} color={accentColor} />
             <Heading
               as="h1"
               size="2xl"

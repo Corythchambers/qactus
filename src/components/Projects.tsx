@@ -14,7 +14,8 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { GiCactus, GiPlantRoots } from "react-icons/gi";
+import { GiPlantRoots } from "react-icons/gi";
+import { BiHappy } from "react-icons/bi";
 
 interface ProjectProps {
   title: string;
@@ -66,7 +67,7 @@ const Project: React.FC<ProjectProps> = ({
 
       <Box p={6}>
         <Flex align="center" mb={2}>
-          <Icon as={GiCactus} mr={2} color="cactus.500" />
+          <Icon as={BiHappy} mr={2} color="cactus.500" />
           <Heading as="h3" size="md" color={headingColor}>
             {title}
           </Heading>
@@ -199,7 +200,7 @@ const Projects = () => {
 
       <Container maxW="container.lg" position="relative" zIndex={1}>
         <Flex align="center" mb={8}>
-          <Icon as={GiCactus} mr={3} w={6} h={6} color="cactus.500" />
+          <Icon as={BiHappy} mr={3} w={6} h={6} color="cactus.500" />
           <Heading as="h2" size="xl" color={headingColor}>
             Projects
           </Heading>

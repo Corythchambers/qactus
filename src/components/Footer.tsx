@@ -9,7 +9,7 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import { FaGithub, FaTwitter } from "react-icons/fa";
-import { GiCactus } from "react-icons/gi";
+import { BiHappy } from "react-icons/bi";
 
 const Footer = () => {
   const bgColor = useColorModeValue("sand.100", "gray.900");
@@ -31,7 +31,7 @@ const Footer = () => {
     >
       {/* Decorative cactus */}
       <Box position="absolute" bottom="0" right="5%" opacity={0.05} zIndex={0}>
-        <Icon as={GiCactus} w={24} h={24} color="cactus.500" />
+        <Icon as={BiHappy} w={24} h={24} color="cactus.500" />
       </Box>
 
       <Container maxW="container.lg" position="relative" zIndex={1}>
@@ -42,7 +42,7 @@ const Footer = () => {
           textAlign={{ base: "center", md: "left" }}
         >
           <Flex align="center">
-            <Icon as={GiCactus} mr={2} fontSize="18px" color={iconColor} />
+            <Icon as={BiHappy} mr={2} fontSize="18px" color={iconColor} />
             <Text>
               © {currentYear} Cory's QA Automation Portfolio. All rights
               reserved.

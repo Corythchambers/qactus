@@ -12,7 +12,8 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { FaEnvelope, FaGithub, FaFilePdf } from "react-icons/fa";
-import { GiCactus, GiPlantRoots } from "react-icons/gi";
+import { GiPlantRoots } from "react-icons/gi";
+import { BiHappy } from "react-icons/bi";
 
 const Contact = () => {
   const bgColor = useColorModeValue("sand.50", "gray.900");
@@ -33,7 +34,7 @@ const Contact = () => {
     >
       {/* Decorative elements */}
       <Box position="absolute" top="10%" right="5%" opacity={0.05} zIndex={0}>
-        <Icon as={GiCactus} w={32} h={32} color="cactus.500" />
+        <Icon as={BiHappy} w={32} h={32} color="cactus.500" />
       </Box>
 
       <Box position="absolute" bottom="10%" left="5%" opacity={0.05} zIndex={0}>
@@ -43,7 +44,7 @@ const Contact = () => {
       <Container maxW="container.md" position="relative" zIndex={1}>
         <VStack spacing={8} align="center" textAlign="center">
           <Flex align="center">
-            <Icon as={GiCactus} mr={3} w={6} h={6} color="cactus.500" />
+            <Icon as={BiHappy} mr={3} w={6} h={6} color="cactus.500" />
             <Heading as="h2" size="xl" color={headingColor}>
               Get In Touch
             </Heading>

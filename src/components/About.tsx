@@ -12,7 +12,8 @@ import {
   Icon,
   Flex,
 } from "@chakra-ui/react";
-import { GiCactus, GiPlantRoots } from "react-icons/gi";
+import { GiPlantRoots } from "react-icons/gi";
+import { BiHappy } from "react-icons/bi";
 
 const About = () => {
   const bgColor = useColorModeValue("white", "gray.800");
@@ -58,7 +59,7 @@ const About = () => {
       <Container maxW="container.lg" position="relative" zIndex={1}>
         <VStack spacing={8} align="flex-start">
           <Flex align="center">
-            <Icon as={GiCactus} mr={3} w={6} h={6} color="cactus.500" />
+            <Icon as={BiHappy} mr={3} w={6} h={6} color="cactus.500" />
             <Heading as="h2" size="xl" color={headingColor}>
               About Me
             </Heading>
@@ -97,7 +98,7 @@ const About = () => {
 
           <Box w="100%" p={6} bg={boxBg} borderRadius="xl" boxShadow="sm">
             <Flex align="center" mb={4}>
-              <Icon as={GiCactus} mr={3} w={5} h={5} color="cactus.500" />
+              <Icon as={BiHappy} mr={3} w={5} h={5} color="cactus.500" />
               <Heading as="h3" size="md" color={headingColor}>
                 My Testing Philosophy
               </Heading>
