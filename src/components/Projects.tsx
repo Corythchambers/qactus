@@ -146,7 +146,7 @@ const Projects = () => {
         "GitHub Actions",
         "WCAG 2.1",
       ],
-      repoUrl: "https://github.com/username/ecommerce-a11y-testing",
+      repoUrl: "https://github.com/Corythchambers/a11y-automation",
       demoUrl: "https://example.com/a11y-report",
     },
     {
@@ -162,7 +162,7 @@ const Projects = () => {
         "Kubernetes",
         "Swagger",
       ],
-      repoUrl: "https://github.com/username/api-test-service",
+      repoUrl: "https://github.com/Corythchambers/api-integration-testing",
     },
     {
       title: "Visual Regression Testing Pipeline",

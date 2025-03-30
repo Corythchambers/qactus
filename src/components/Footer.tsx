@@ -51,7 +51,7 @@ const Footer = () => {
 
           <Flex mt={{ base: 4, md: 0 }} gap={4}>
             <Link
-              href="https://github.com/your-username"
+              href="https://github.com/Corythchambers"
               isExternal
               color={textColor}
               _hover={{ color: iconColor }}

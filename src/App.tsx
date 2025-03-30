@@ -11,15 +11,20 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+  // The height of our navbar is 60px, so we add it as top padding to the main content
   return (
     <Box minH="100vh">
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Blog />
-      <Contact />
-      <Footer />
+      <Box pt="60px">
+        {" "}
+        {/* Add padding top equal to navbar height */}
+        <Hero />
+        <About />
+        <Projects />
+        <Blog />
+        <Contact />
+        <Footer />
+      </Box>
     </Box>
   );
 }

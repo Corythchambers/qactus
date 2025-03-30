@@ -51,7 +51,15 @@ const Navbar = () => {
   const borderColor = useColorModeValue("sand.200", "gray.700");
 
   return (
-    <Box>
+    <Box
+      position="fixed"
+      top={0}
+      left={0}
+      right={0}
+      zIndex={1000}
+      boxShadow="md"
+      width="100%"
+    >
       <Flex
         bg={bgColor}
         color={useColorModeValue("cactus.700", "white")}
@@ -62,10 +70,6 @@ const Navbar = () => {
         borderStyle={"solid"}
         borderColor={borderColor}
         align={"center"}
-        position="sticky"
-        top={0}
-        zIndex={1000}
-        boxShadow="sm"
       >
         <Flex
           flex={{ base: 1, md: "auto" }}

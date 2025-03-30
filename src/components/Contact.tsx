@@ -94,7 +94,7 @@ const Contact = () => {
                   variant="outline"
                   size="lg"
                   as="a"
-                  href="https://github.com/your-username"
+                  href="https://github.com/Corythchambers"
                   target="_blank"
                   rel="noopener noreferrer"
                   _hover={{
