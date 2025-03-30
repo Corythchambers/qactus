@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus outline styles for accessibility */
+:focus-visible {
+  outline: 2px solid #3182ce;
+  outline-offset: 2px;
+}
+
+/* Remove default focus style */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Smooth transitions */
+a,
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Section padding for mobile devices */
+@media (max-width: 768px) {
+  section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
