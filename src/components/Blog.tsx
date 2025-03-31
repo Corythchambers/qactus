@@ -14,22 +14,16 @@ import {
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { GiPlantRoots } from "react-icons/gi";
 import { BiHappy } from "react-icons/bi";
+import { Link as RouterLink } from "react-router-dom";
+import { blogPosts } from "../data/blogPosts";
 
-interface BlogPostProps {
+const BlogPost: React.FC<{
   title: string;
   description: string;
   date: string;
-  tags: string[];
+  tags: { label: string }[];
   url: string;
-}
-
-const BlogPost: React.FC<BlogPostProps> = ({
-  title,
-  description,
-  date,
-  tags,
-  url,
-}) => {
+}> = ({ title, description, date, tags, url }) => {
   const cardBg = useColorModeValue("white", "gray.700");
   const cardBorderColor = useColorModeValue("sand.200", "gray.600");
   const tagBg = useColorModeValue("cactus.50", "cactus.900");
@@ -87,13 +81,14 @@ const BlogPost: React.FC<BlogPostProps> = ({
               color={tagColor}
               borderRadius="full"
             >
-              {tag}
+              {tag.label}
             </Tag>
           ))}
         </Flex>
 
         <Link
-          href={url}
+          as={RouterLink}
+          to={url}
           color="cactus.500"
           fontWeight="medium"
           display="flex"
@@ -111,33 +106,6 @@ const Blog = () => {
   const bgColor = useColorModeValue("white", "gray.800");
   const textColor = useColorModeValue("gray.700", "gray.200");
   const headingColor = useColorModeValue("cactus.700", "cactus.300");
-
-  const blogPosts: BlogPostProps[] = [
-    {
-      title: "How I Built an Axe-core Automation Framework in Playwright",
-      description:
-        "A deep dive into creating an accessibility testing framework using Playwright and Axe-core, with code examples and best practices.",
-      date: "March 15, 2023",
-      tags: ["Accessibility", "Playwright", "Automation", "Axe-core"],
-      url: "/blog/axe-playwright-framework",
-    },
-    {
-      title: "5 A11y Pitfalls to Catch Before You Launch",
-      description:
-        "Common accessibility issues that are often overlooked and how to detect them early in the development process.",
-      date: "February 2, 2023",
-      tags: ["Accessibility", "WCAG", "Testing"],
-      url: "/blog/a11y-pitfalls",
-    },
-    {
-      title: "Debugging Flaky Tests in CI/CD Pipelines",
-      description:
-        "Strategies for identifying, isolating, and fixing flaky tests that only fail in CI/CD environments.",
-      date: "December 10, 2022",
-      tags: ["CI/CD", "Testing", "Debugging", "GitHubActions"],
-      url: "/blog/debugging-flaky-tests",
-    },
-  ];
 
   return (
     <Box
@@ -164,7 +132,14 @@ const Blog = () => {
 
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8}>
           {blogPosts.map((post, index) => (
-            <BlogPost key={index} {...post} />
+            <BlogPost
+              key={index}
+              title={post.title}
+              description={post.description}
+              date={post.date}
+              tags={post.tags}
+              url={`/blog/${post.id}`}
+            />
           ))}
         </SimpleGrid>
       </Container>
