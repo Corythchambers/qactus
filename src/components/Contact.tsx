@@ -77,7 +77,7 @@ const Contact = () => {
                   colorScheme={buttonColorScheme}
                   size="lg"
                   as="a"
-                  href="mailto:cory.email@example.com"
+                  href="mailto:hello@qactus.io"
                   shadow="md"
                   _hover={{
                     transform: "translateY(-2px)",
