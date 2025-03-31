@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <!-- Background Circle -->
+  <circle cx="96" cy="96" r="96" fill="#5b8c53"/>
+  
+  <!-- Smiley Face -->
+  <g fill="none" stroke="white" stroke-width="10">
+    <!-- Face Outline -->
+    <circle cx="96" cy="96" r="72" />
+    
+    <!-- Eyes -->
+    <circle cx="68" cy="76" r="12" fill="white" stroke="none"/>
+    <circle cx="124" cy="76" r="12" fill="white" stroke="none"/>
+    
+    <!-- Smile -->
+    <path d="M60 108c12 24 60 24 72 0" stroke-linecap="round"/>
+  </g>
+</svg> 
