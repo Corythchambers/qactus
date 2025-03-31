@@ -67,7 +67,7 @@ const Project: React.FC<ProjectProps> = ({
 
       <Box p={6}>
         <Flex align="center" mb={2}>
-          <Icon as={BiHappy} mr={2} color="cactus.500" />
+          <Icon as={BiHappy} mr={2} color="cactus.500" aria-hidden="true" />
           <Heading as="h3" size="md" color={headingColor}>
             {title}
           </Heading>
@@ -106,8 +106,9 @@ const Project: React.FC<ProjectProps> = ({
               _hover={{ color: "cactus.600" }}
               display="flex"
               alignItems="center"
+              aria-label={`${title} repository link`}
             >
-              Repository <ExternalLinkIcon mx="2px" />
+              Repository <ExternalLinkIcon mx="2px" aria-hidden="true" />
             </Link>
           )}
           {demoUrl && (
@@ -118,8 +119,9 @@ const Project: React.FC<ProjectProps> = ({
               _hover={{ color: "sun.700" }}
               display="flex"
               alignItems="center"
+              aria-label={`${title} live demo link`}
             >
-              Live Demo <ExternalLinkIcon mx="2px" />
+              Live Demo <ExternalLinkIcon mx="2px" aria-hidden="true" />
             </Link>
           )}
         </Stack>
@@ -195,12 +197,25 @@ const Projects = () => {
     >
       {/* Decorative elements */}
       <Box position="absolute" top="10%" right="2%" opacity={0.05} zIndex={0}>
-        <Icon as={GiPlantRoots} w={28} h={28} color="cactus.500" />
+        <Icon
+          as={GiPlantRoots}
+          w={28}
+          h={28}
+          color="cactus.500"
+          aria-hidden="true"
+        />
       </Box>
 
       <Container maxW="container.lg" position="relative" zIndex={1}>
         <Flex align="center" mb={8}>
-          <Icon as={BiHappy} mr={3} w={6} h={6} color="cactus.500" />
+          <Icon
+            as={BiHappy}
+            mr={3}
+            w={6}
+            h={6}
+            color="cactus.500"
+            aria-hidden="true"
+          />
           <Heading as="h2" size="xl" color={headingColor}>
             Projects
           </Heading>

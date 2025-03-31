@@ -32,6 +32,7 @@ const NavItem: React.FC<NavItemProps> = ({ children, href }) => {
       fontSize={"md"}
       fontWeight={"medium"}
       color={linkColor}
+      role="menuitem"
       _hover={{
         textDecoration: "none",
         color: linkHoverColor,
@@ -59,6 +60,8 @@ const Navbar = () => {
       zIndex={1000}
       boxShadow="md"
       width="100%"
+      as="nav"
+      aria-label="Main Navigation"
     >
       <Flex
         bg={bgColor}
@@ -83,6 +86,8 @@ const Navbar = () => {
             }
             variant={"ghost"}
             aria-label={"Toggle Navigation"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-nav"
           />
         </Flex>
 
@@ -97,13 +102,20 @@ const Navbar = () => {
             color={useColorModeValue("cactus.700", "cactus.300")}
             display="flex"
             alignItems="center"
+            aria-label="Home"
           >
-            <Box as={BiHappy} mr={2} color="cactus.500" fontSize="1.7rem" />
+            <Box
+              as={BiHappy}
+              mr={2}
+              color="cactus.500"
+              fontSize="1.7rem"
+              aria-hidden="true"
+            />
             Cory's Portfolio
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <Stack direction={"row"} spacing={4}>
+            <Stack direction={"row"} spacing={4} role="menubar">
               <NavItem href="#about">About</NavItem>
               <NavItem href="#projects">Projects</NavItem>
               <NavItem href="#blog">Blog</NavItem>
@@ -118,14 +130,28 @@ const Navbar = () => {
           direction={"row"}
           spacing={6}
         >
-          <Button onClick={toggleColorMode} variant="ghost" borderRadius="full">
-            {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+          <Button
+            onClick={toggleColorMode}
+            variant="ghost"
+            borderRadius="full"
+            aria-label={
+              colorMode === "light"
+                ? "Switch to dark mode"
+                : "Switch to light mode"
+            }
+          >
+            {colorMode === "light" ? (
+              <MoonIcon aria-hidden="true" />
+            ) : (
+              <SunIcon aria-hidden="true" />
+            )}
           </Button>
         </Stack>
       </Flex>
 
       {/* Mobile menu */}
       <Box
+        id="mobile-nav"
         display={{ base: isOpen ? "block" : "none", md: "none" }}
         bg={bgColor}
         p={4}
@@ -133,6 +159,7 @@ const Navbar = () => {
         borderStyle={"solid"}
         borderColor={borderColor}
         shadow="md"
+        role="menu"
       >
         <Stack as={"nav"} spacing={4}>
           <NavItem href="#about">About</NavItem>
