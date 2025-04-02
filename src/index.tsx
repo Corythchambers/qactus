@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ChakraUIProvider from "./ChakraUIProvider";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 // Import Nunito font
 import "@fontsource/nunito/300.css";
@@ -18,11 +18,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <ChakraUIProvider>
         <App />
       </ChakraUIProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
