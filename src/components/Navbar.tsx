@@ -152,6 +152,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       <Box
         id="mobile-nav"
+        data-testid="mobile-nav"
         display={{ base: isOpen ? "block" : "none", md: "none" }}
         bg={bgColor}
         p={4}

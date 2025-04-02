@@ -152,6 +152,20 @@ const Projects = () => {
       demoUrl: "https://example.com/a11y-report",
     },
     {
+      title: "CV/Resume Application",
+      description:
+        "A modern, responsive web application for creating and showcasing professional resumes and portfolios with customizable sections and themes.",
+      role: "Developed the full application from design to deployment, implementing responsive UI components and data management.",
+      tools: [
+        "React",
+        "TypeScript",
+        "Chakra UI",
+        "React Router",
+        "GitHub Pages",
+      ],
+      repoUrl: "https://github.com/Corythchambers/qactus",
+    },
+    {
       title: "API Testing Microservice",
       description:
         "A microservice for continuous API testing that integrates with CI/CD pipelines to provide real-time validation of API endpoints.",
@@ -174,20 +188,6 @@ const Projects = () => {
       tools: ["Cypress", "Percy", "JavaScript", "Jenkins", "AWS Lambda"],
       repoUrl: "https://github.com/username/visual-regression-pipeline",
       demoUrl: "https://example.com/visual-tests-dashboard",
-    },
-    {
-      title: "CV/Resume Application",
-      description:
-        "A modern, responsive web application for creating and showcasing professional resumes and portfolios with customizable sections and themes.",
-      role: "Developed the full application from design to deployment, implementing responsive UI components and data management.",
-      tools: [
-        "React",
-        "TypeScript",
-        "Chakra UI",
-        "React Router",
-        "GitHub Pages",
-      ],
-      repoUrl: "https://github.com/Corythchambers/qactus",
     },
   ];
 

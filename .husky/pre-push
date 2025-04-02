@@ -1,0 +1,12 @@
+ #!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "Running tests and linting before push..."
+
+# Run tests in CI mode
+npm run test:ci || { echo "Tests failed. Push aborted."; exit 1; }
+
+# Run linting
+npm run lint || { echo "Linting failed. Push aborted."; exit 1; }
+
+echo "All checks passed! Proceeding with push."
