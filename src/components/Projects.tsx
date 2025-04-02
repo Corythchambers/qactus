@@ -176,12 +176,18 @@ const Projects = () => {
       demoUrl: "https://example.com/visual-tests-dashboard",
     },
     {
-      title: "Mobile App Test Automation Framework",
+      title: "CV/Resume Application",
       description:
-        "A cross-platform mobile testing framework that performs UI, functional and performance testing on iOS and Android.",
-      role: "Architected a framework to automate testing across iOS and Android platforms with a single test suite.",
-      tools: ["Appium", "WebdriverIO", "Mocha", "TypeScript", "BrowserStack"],
-      repoUrl: "https://github.com/username/mobile-test-framework",
+        "A modern, responsive web application for creating and showcasing professional resumes and portfolios with customizable sections and themes.",
+      role: "Developed the full application from design to deployment, implementing responsive UI components and data management.",
+      tools: [
+        "React",
+        "TypeScript",
+        "Chakra UI",
+        "React Router",
+        "GitHub Pages",
+      ],
+      repoUrl: "https://github.com/Corythchambers/qactus",
     },
   ];
 
