@@ -4,15 +4,12 @@ A modern, responsive portfolio website for QA Automation Engineers and Software 
 
 ## Features
 
-- 🎨 Modern UI with light/dark mode toggle
-- 📱 Fully responsive design
-- ♿ Accessible to all users
-- 🚀 Fast performance
-- 📝 Sections for: Intro, About, Projects, Blog, and Contact
+- Modern UI with light/dark mode toggle
+- Fully responsive design
+- Accessible to all users
+- Fast performance
+- Sections for: Intro, About, Projects, Blog, and Contact
 
-## Live Demo
-
-You can view the live demo at: [Your Demo URL]
 
 ## Getting Started
 
@@ -45,16 +42,6 @@ You can view the live demo at: [Your Demo URL]
 4. Open your browser and navigate to `http://localhost:3000`
 
 ## Customization
-
-### Personalization
-
-To personalize this portfolio for your own use:
-
-1. Update content in the components (located in `src/components/`)
-2. Replace placeholder links with your actual profiles (GitHub, LinkedIn, etc.)
-3. Update project details with your own projects
-4. Add blog posts that showcase your expertise
-5. Replace placeholder email with your contact information
 
 ### Styling
 
@@ -143,10 +130,6 @@ Open `src/App.tsx` and add a new route for your blog post:
 ### Step 4: Test your new blog post
 
 Run the application and navigate to your new blog post to make sure it appears correctly.
-
-## License
-
-MIT
 
 ## Acknowledgments
 
