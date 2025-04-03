@@ -36,6 +36,7 @@ jobs:
           branch: gh-pages
 
   trigger-e2e:
+    needs: build-and-deploy
     runs-on: ubuntu-latest
     steps:
       - name: Send repository_dispatch
