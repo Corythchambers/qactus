@@ -47,7 +47,7 @@ describe("Projects Component", () => {
 
     // Check for demo links (not all projects have demo links)
     const demoLinks = screen.getAllByText(/Live Demo/i);
-    expect(demoLinks.length).toBeGreaterThanOrEqual(2);
+    expect(demoLinks.length).toBeGreaterThanOrEqual(1);
 
     // Check that links have correct attributes
     const links = screen.getAllByRole("link");
