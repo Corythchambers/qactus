@@ -40,7 +40,7 @@ jobs:
     steps:
       - name: Send repository_dispatch
         run: |
-          curl -X POST https://api.github.com/repos/<ORG_OR_USER>/<E2E_REPO>/dispatches \
+          curl -X POST https://api.github.com/repos/Corythchambers/qactus-e2e/dispatches \
           -H "Authorization: token ${{ secrets.E2E_REPO_TRIGGER_PAT }}" \
           -H "Accept: application/vnd.github.v3+json" \
           -d '{"event_type": "run-e2e", "client_payload": {"triggered_by": "cv-repo"}}'
