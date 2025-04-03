@@ -50,12 +50,6 @@ describe("Navbar Component", () => {
     });
     expect(hamburgerButton).toBeInTheDocument();
 
-    // Find the mobile nav by ID
-    const mobileNav = screen.getByTestId("mobile-nav");
-
-    // Initial check for visibility would depend on implementation details
-    // Instead, we just test that clicking the button changes state
-
     // Click hamburger button to show mobile menu
     fireEvent.click(hamburgerButton);
 
