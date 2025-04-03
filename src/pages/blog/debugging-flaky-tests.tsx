@@ -81,7 +81,7 @@ const DebuggingFlakyTestsBlog = () => {
         </Flex>
 
         <Text fontStyle="italic" mb={8} color="gray.500">
-          Published on December 10, 2022 • 10 min read
+          Published on December 10, 2024 • 10 min read
         </Text>
 
         <VStack spacing={6} align="stretch">

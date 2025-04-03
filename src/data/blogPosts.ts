@@ -37,7 +37,7 @@ export const blogPosts: BlogPostMeta[] = [
     title: "5 A11y Pitfalls to Catch Before You Launch",
     description:
       "Common accessibility issues that are often overlooked and how to detect them early in the development process.",
-    date: "February 2, 2023",
+    date: "February 2, 2024",
     readTime: "6 min",
     tags: [{ label: "Accessibility" }, { label: "WCAG" }, { label: "Testing" }],
     imageUrl:
