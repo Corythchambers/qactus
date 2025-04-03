@@ -186,8 +186,7 @@ const Projects = () => {
         "An automated visual regression testing pipeline that captures and compares screenshots across different browser dimensions.",
       role: "Created a visual testing pipeline that integrates with CI/CD to catch UI regressions before deployment.",
       tools: ["Cypress", "Percy", "JavaScript", "Jenkins", "AWS Lambda"],
-      repoUrl: "https://github.com/username/visual-regression-pipeline",
-      demoUrl: "https://example.com/visual-tests-dashboard",
+      repoUrl: "https://github.com/Corythchambers/qactus-e2e",
     },
   ];
 
