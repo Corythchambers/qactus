@@ -19,7 +19,7 @@ export const blogPosts: BlogPostMeta[] = [
     title: "How I Built an Axe-core Automation Framework in Playwright",
     description:
       "A deep dive into creating an accessibility testing framework using Playwright and Axe-core, with code examples and best practices.",
-    date: "March 15, 2023",
+    date: "March 15, 2025",
     readTime: "8 min",
     tags: [
       { label: "Accessibility" },
@@ -49,7 +49,7 @@ export const blogPosts: BlogPostMeta[] = [
     title: "Debugging Flaky Tests in CI/CD Pipelines",
     description:
       "Strategies for identifying, isolating, and fixing flaky tests that only fail in CI/CD environments.",
-    date: "December 10, 2022",
+    date: "December 10, 2024",
     readTime: "10 min",
     tags: [
       { label: "CI/CD" },

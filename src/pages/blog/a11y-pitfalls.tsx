@@ -79,7 +79,7 @@ const A11yPitfallsBlog = () => {
         </Flex>
 
         <Text fontStyle="italic" mb={8} color="gray.500">
-          Published on February 2, 2023 • 6 min read
+          Published on February 2, 2025 • 6 min read
         </Text>
 
         <VStack spacing={6} align="stretch">
